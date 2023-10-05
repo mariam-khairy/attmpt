@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- form for regisrtation -->
+   <div class="w-75 py-4 mx-auto">
+
+    <h1 class="text-center my-2">Registration</h1>
+
+    <label for="firstName">First Name :</label>
+    <input type="text" class="form-control my-2" id="firstName">
+
+    <label for="lastName">Last Name :</label>
+    <input type="text" class="form-control my-2" id="lastName">
+
+    <label for="age">Age :</label>
+    <input type="number" class="form-control my-2" id="age">
+
+    <label for="email">Email :</label>
+    <input type="email" class="form-control my-2" id="email">
+
+    <label for="department">Department :</label>
+    <input type="text" class="form-control my-2" id="department">
+
+    <button id="mainBtn" onclick=" addData(this.value) " class="btn btn-warning">Send</button>
+   </div>
+   <!-- end the registrtion -->
+
+   <!-- show the data in the table which i send -->
+   <div class="w-75 mx-auto py-7">
+ 
+    <div class="w-75 mx-auto py-4">
+        <label for="search">Search........</label>
+        <input onkeyup='searchOnData(this.value)' type="text" id="search" class="form-control my-2">
+    </div>
+    <h1 class="text-center">Data</h1>
+
+    <table class="table mx-auto">
+        <thead>
+            <th>index</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>age</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+
+        <tbody id="tableRow">
+           
+        </tbody>
+    </table>
+   </div>
+   
+  
+
+    <script src="js/cdn.jsdelivr.net_npm_@popperjs_core@2.11.8_dist_umd_popper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
